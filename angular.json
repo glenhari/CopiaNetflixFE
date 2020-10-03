@@ -117,8 +117,13 @@
               "devServerTarget": "CopiaNetflixFE:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "CopiaNetflixFE"
 }

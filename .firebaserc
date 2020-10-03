@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "copianetflixbe": {
+      "hosting": {
+        "CopiaNetflixFE": [
+          "copianetflixbe"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "copianetflixbe"
+  }
+}
