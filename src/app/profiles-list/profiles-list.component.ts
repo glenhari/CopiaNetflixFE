@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { ProfilesService } from '../profiles.service';
 import { trigger, state, style, transition, animate, keyframes } from "@angular/animations";
 import { Profiles } from '../profiles';
@@ -16,16 +16,30 @@ import { Profiles } from '../profiles';
     ])
   ]
 })
-export class ProfilesListComponent implements OnInit {
+export class ProfilesListComponent implements OnInit, OnChanges {
 
   constructor(private profilesService:ProfilesService) { }
 
   perfis;
-  showSpinner: boolean = true; 
+  showSpinner: boolean = false; 
+  profileLoading;
+
 
   ngOnInit(): void {
     this.profilesService.getProfiles().subscribe((data: Profiles) => {
       this.perfis = data;
     });
   }
+
+  ngOnChanges(){
+    
+  }
+
+  selectProfile(item): void{
+    this.profileLoading = item.fotoPerfilURL;
+    this.showSpinner = true;
+    //codigo para setar cookies de perfil selecionado ou seja la o que for (pesquisar)
+  }
+
+  
 }
