@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #141414;
+    margin: 0px;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    display: block;
+}
+
+body, html {
+    background: #141414;
+    color: #fff;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1601px) and (orientation: landscape){
+    body, html {
+        font-size: .75vw;
+    }
+}
+
+div{
+    display: block;
+}
+
+@font-face {
+    font-family: "nf-icon";
+    src: url("assets/font/nf-icon-v1-93.woff") format('woff');
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}

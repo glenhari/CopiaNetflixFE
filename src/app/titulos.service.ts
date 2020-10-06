@@ -16,8 +16,7 @@ export class TitulosService {
   items;
 
   httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-    responseType: 'text' as 'json' 
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
   getTitulos(){

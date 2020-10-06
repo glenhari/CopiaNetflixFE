@@ -1,0 +1,25 @@
+<div @fade class="profiles-gate-container">
+    <div class="centered-div list-profiles-container">
+        <div class="list-profiles">
+            <div class="list-profiles gate-label">Quem está assistindo?</div>
+            <ul class="choose-profile">
+                <li *ngFor="let perfil of perfis; index as i;" class="profile">
+                    <div>
+                        <a class="profile-link" tabindex="0">
+                            <div class="avatar-wrapper">
+                                <div class="profile-icon" style="background-image:url({{perfil.fotoPerfilURL}})"> 
+                                </div>
+                            </div>
+                            <span class="profile-name">{{perfil.nome}}</span>
+                        </a>
+                        <div class="profile-children"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<app-loading-spinner></app-loading-spinner>

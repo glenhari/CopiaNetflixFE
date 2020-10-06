@@ -6,5 +6,4 @@ export interface Titulos {
     duracao: string;
     videoUrl: string;
     ParentalControl: string;
-
 }
